@@ -1,0 +1,122 @@
+.wrapper {
+	@include flexbox;
+	@include flex-wrap(wrap);
+	width: 200px;
+	min-height: 40px;
+
+	.cell {
+		width: 20%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		min-height: 40px;
+		display: inline-block;
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		opacity: 0.1;
+		border-radius: 20px;
+
+		&.third {
+			width: 33%;
+		}
+
+		&.quarter {
+			width: 25%;
+		}
+
+		&.fifth {
+			width: 20%;
+		} 
+
+		&.on {
+			-webkit-filter: none;
+			filter: none;
+			opacity: 1;
+		}
+
+		&.cubeOfZoe {
+			background-image: url('../../icons/Cube_of_Zoe_Icon.png');
+		}
+		&.faerieScroll {
+			background-image: url('../../icons/Fairie_Scroll_Icon.png');
+		}
+		&.jewelOfOpen {
+			background-image: url('../../icons/Jewel_of_Open_Icon.png');
+		}
+		&.leapStone {
+			background-image: url('../../icons/Leap_Stone_Icon.png');
+		}
+		&.gravityBoots {
+			background-image: url('../../icons/Gravity_Boots_Icon.png');
+		}
+		&.mermanStatue {
+			background-image: url('../../icons/Merman_Statue_Icon.png');
+		}
+		&.holySymbol {
+			background-image: url('../../icons/Holy_Symbol_Icon.png');
+		}
+		&.spiritOrb {
+			background-image: url('../../icons/Spirit_Orb_Icon.png');
+		}
+		&.soulOfBat {
+			background-image: url('../../icons/Soul_of_Bat_Icon.png');
+		}
+		&.echoOfBat {
+			background-image: url('../../icons/Echo_of_Bat_Icon.png');
+		}
+		&.fireOfBat {
+			background-image: url('../../icons/Fire_of_Bat_Icon.png');
+		}
+		&.forceOfEcho {
+			background-image: url('../../icons/Force_of_Echo_Icon.png');
+		}
+		&.formOfMist {
+			background-image: url('../../icons/Form_of_Mist_Icon.png');
+		}
+		&.powerOfMist {
+			background-image: url('../../icons/Power_of_Mist_Icon.png');
+		}
+		&.gasCloud {
+			background-image: url('../../icons/Gas_Cloud_Icon.png');
+		}
+		&.soulOfWolf {
+			background-image: url('../../icons/Soul_of_Wolf_Icon.png');
+		}
+		&.powerOfWolf {
+			background-image: url('../../icons/Power_of_Wolf_Icon.png');
+		}
+		&.skillOfWolf {
+			background-image: url('../../icons/Skill_of_Wolf_Icon.png');
+		}
+		&.faerieCard {
+			background-image: url('../../icons/Card_Faerie_Icon.png');
+		}
+		&.demonCard {
+			background-image: url('../../icons/Card_Demon_Icon.png');
+		}
+		&.batCard {
+			background-image: url('../../icons/Card_Bat_Icon.png');
+		}
+		&.ghostCard {
+			background-image: url('../../icons/Card_Ghost_Icon.png');
+		}
+		&.swordCard {
+			background-image: url('../../icons/Card_Sword_Icon.png');
+		}
+		&.eyeOfVlad {
+			background-image: url('../../icons/Eye_of_Vlad_Icon.png');
+		}
+		&.ribOfVlad {
+			background-image: url('../../icons/Rib_of_Vlad_Icon.png');
+		}
+		&.heartOfVlad {
+			background-image: url('../../icons/Heart_of_Vlad_Icon.png');
+		}
+		&.toothOfVlad {
+			background-image: url('../../icons/Tooth_of_Vlad_Icon.png');
+		}
+		&.ringOfVlad {
+			background-image: url('../../icons/Ring_of_Vlad_Icon.png');
+		}
+	}
+
+}

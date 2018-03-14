@@ -1,0 +1,21 @@
+// grid structure variables for Neat //
+$grid-columns: 12;
+$max-width: em(1088); 									// value in pixels but defined unitless for calculations
+
+// Override Neat's grid settings //
+$column: golden-ratio(1em, 3) !default; 				// Column width
+$gutter: golden-ratio(1em, 3) !default; 				// Gutter between each two columns
+
+// Set Bourbon's flex-grid variables to match what Neat is doing
+// http://bourbon.io/docs/#flex-grid
+
+$fg-column: $column;
+$fg-gutter: $gutter;
+
+// Define your breakpoints - note, for Retina media queries, use Bourbon's mixin '@include hidpi' //
+$mobile-skinny: new-breakpoint(min-width 20em 4);		// 20em = 320px
+$mobile-wide: new-breakpoint(min-width 30em 4);			// 30em = 480px
+$tablet: new-breakpoint(min-width 45em 8);				// 45em = 720px
+$desktop: new-breakpoint(min-width 60em 12);			// 60em = 960px
+$superwide: new-breakpoint(min-width 68em 12);			// 68em = 1088px
+$maximum: new-breakpoint(min-width 75em 12);			// 75em = 1200px

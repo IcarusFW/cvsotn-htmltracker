@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]>
+	<html lang="en" class="no-js ie8">
+<![endif]-->
+<!--[if !IE ]> -->
+	<html lang="en" class="no-js not-ie">
+<!-- <![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<!-- meta for enforcing IE versions: "edge" attempts to use the latest rendering engine available in the browser -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title></title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+
+	<!-- meta tag for responsive resizing, required to make media queries work on devices -->
+	<!-- include "maximum-scale=1" within 'content' parameters if you wish to turn off device zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- modernizr.js -->
+	<!-- <script src="common/bower_components/modernizr/modernizr.js"></script> -->
+	<script src="common/js/modernizr.custom-min.js"></script> <!-- css-calc version -->
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="common/css/normalize3.0.2.css" /> <!-- Normalize IE8+ -->
+	<link rel="stylesheet" href="common/css/styles.css" /> <!-- sitewide stylesheet -->
+
+	<script type="text/javascript">
+		function addEvent(el, type, handler) {
+		    if (el.attachEvent) el.attachEvent('on'+type, handler); else el.addEventListener(type, handler);
+		}
+
+		// matches polyfill
+		this.Element && function(ElementPrototype) {
+		    ElementPrototype.matches = ElementPrototype.matches ||
+		    ElementPrototype.matchesSelector ||
+		    ElementPrototype.webkitMatchesSelector ||
+		    ElementPrototype.msMatchesSelector ||
+		    function(selector) {
+		        var node = this, nodes = (node.parentNode || node.document).querySelectorAll(selector), i = -1;
+		        while (nodes[++i] && nodes[i] != node);
+		        return !!nodes[i];
+		    }
+		}(Element.prototype);
+
+		// live binding helper using matchesSelector
+		function live(selector, event, callback, context) {
+		    addEvent(context || document, event, function(e) {
+		        var found, el = e.target || e.srcElement;
+		        while (el && el.matches && el !== context && !(found = el.matches(selector))) el = el.parentElement;
+		        if (found) callback.call(el, e);
+		    });
+		}
+
+		function hasClass(el, className) {
+		    return el.classList ? el.classList.contains(className) : new RegExp('\\b'+ className+'\\b').test(el.className);
+		}
+
+		function addClass(el, className) {
+		    if (el.classList) el.classList.add(className);
+		    else if (!hasClass(el, className)) el.className += ' ' + className;
+		}
+
+		function removeClass(el, className) {
+		    if (el.classList) el.classList.remove(className);
+		    else el.className = el.className.replace(new RegExp('\\b'+ className+'\\b', 'g'), '');
+		}
+
+		function toggleClass(el, className) {
+			(hasClass(el, className)) ? removeClass(el, className) : addClass(el, className);
+		}
+
+		live('.cell', 'click', function(){
+			toggleClass(this, 'on');
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="cell cubeOfZoe quarter"></div>
+		<div class="cell spiritOrb quarter"></div>
+		<div class="cell faerieScroll quarter"></div>
+		<div class="cell jewelOfOpen quarter"></div>
+		<div class="cell leapStone quarter"></div>
+		<div class="cell gravityBoots quarter"></div>
+		<div class="cell mermanStatue quarter"></div>
+		<div class="cell holySymbol quarter"></div>
+		<div class="cell soulOfBat quarter"></div>
+		<div class="cell fireOfBat quarter"></div>
+		<div class="cell echoOfBat quarter"></div>
+		<div class="cell forceOfEcho quarter"></div>
+		<div class="cell formOfMist third"></div>
+		<div class="cell powerOfMist third"></div>
+		<div class="cell gasCloud third"></div>
+		<div class="cell soulOfWolf third"></div>
+		<div class="cell powerOfWolf third"></div>
+		<div class="cell skillOfWolf third"></div>
+		<div class="cell faerieCard fifth"></div>
+		<div class="cell demonCard fifth"></div>
+		<div class="cell batCard fifth"></div>
+		<div class="cell ghostCard fifth"></div>
+		<div class="cell swordCard fifth"></div>
+		<div class="cell eyeOfVlad fifth"></div>
+		<div class="cell ribOfVlad fifth"></div>
+		<div class="cell heartOfVlad fifth"></div>
+		<div class="cell toothOfVlad fifth"></div>
+		<div class="cell ringOfVlad fifth"></div>
+	</div>
+
+</body>
+</html>

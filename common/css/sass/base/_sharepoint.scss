@@ -1,0 +1,211 @@
+// - - - - - - - - - - - - - SHAREPOINT STYLING OVERRIDES - - - - - - - - - - - - - //
+
+// Sharepoint Scrolling Fix - critical for standards-compliant browser interaction
+// http://kyleschaeffer.com/sharepoint/sharepoint-2010-scrolling/
+//
+// Sharepoint disables body scrolling and uses Javascript to fix ribbon in position.
+// This CSS, in conjunction with the associated sharepoint.js script, reverses that behavior.
+// This is useful for creating fixed-position navigation among other things.
+// NOTE: ensure you remove the 'scroll="no"' property off the body tag on the master page.
+
+body.v4master {
+   overflow: visible;
+   height: inherit;
+   width: inherit;
+}
+body #s4-workspace {
+	//overflow: visible !important;
+	@extend %removeflow;
+}
+body #s4-ribbonrow {
+	@extend %removeflow;
+	position: fixed;
+	z-index: 1000;
+}
+#s4-ribbonrow .ms-MenuUIPopupBody, #s4-ribbonrow .ms-popoutMenu, .ms-cui-menu[id ^= "Ribbon."] {
+	position: fixed !important;
+}
+.ms-dlgOverlay {
+	width: 100% !important;
+}
+
+// Sharepoint Content Container Overrides
+//
+// Fixes to repair layout of content containers, including removing any extraneous padding and margins.
+// Uses inlineblock-parent to repair inlineblock layout
+
+body {
+	
+	// ribbon fixes
+	#s4-ribbonrow {
+		overflow-y: initial; // brings ribbon dropdown menus on top of content - overflow-y: hidden cuts them off
+		background-color: palette(backgrounds, nav-main); // ribbon button background color
+		color: palette(text, headings) !important; // ribbon button text color
+		height: 44px; // set the same as the content within
+		overflow-y: visible !important;  // Internet Explorer fix for MS's own styling, since Sharepoint is retarded
+		
+		& #s4-ribboncont {
+			background: none;
+			position: relative;
+			z-index: 9999;
+		}
+		
+		& .ms-cui-TabRowLeft {
+			margin-top: 0;
+		}
+
+		& .ms-cui-tabBody {
+			overflow: initial; // fixes flow selector quirks
+			height: 93px; // adds extra spacing pixels
+		}
+
+		& a.ms-cui-ctl, a.ms-cui-ctl-medium {
+			height: 22px;
+		}
+
+		& .ms-cui-ctl-iconContainer {
+			//display: none;
+		}
+	}
+
+	// webpart dropdown menu button fix
+	.ms-WPMenuDiv a, .ms-WPMenuDivHover a, .ms-MenuUIULLink {
+		padding: 0 4px !important;
+		
+
+		&:hover, &:focus {
+			transition: initial !important;
+		}
+	}
+
+	.ms-WPMenuDiv a, .ms-WPMenuDivHover a {
+		background-color: #f6f6f6;
+		border: 1px solid #9ac6ff;
+
+		&:hover, &:focus {
+			background-color: #f2f2f2 !important;
+			border: 1px solid #0072bc;
+		}
+	}
+
+	// webpart title fix
+	.ms-standardheader.ms-WPTitle {
+		font-size: 12px !important;
+	}
+	
+	.ms-cui-tt-a, .ms-siteactionsmenu a, .ms-welcomeMenu a {
+		color: palette(text, headings) !important; // ribbon button text color
+	}
+	
+	.ms-cui-tt-a:hover, .ms-siteactionsmenu:hover a, .ms-welcomeMenu:hover a {
+		color: palette(text, light) !important;
+	}
+
+	// workspace fixes
+	#s4-workspace {
+		overflow: hidden; // removes Sharepoint pseudo-scrolling, returning scroll functionality to body
+	}
+	
+	#s4-bodyContainer {
+		min-width: 0; // fixes minimum width for responsive sites, so they resize correctly
+	}
+
+	// content fixes
+	#ctl00_MSO_ContentDiv {
+		//@include inlineblock-child;
+		width: 100%;
+		
+		.s4-ca {
+		@include inlineblock-parent;
+		margin-left: 0;
+			
+			& > * {
+				//@include inlineblock-parent;
+				letter-spacing: normal; // fixes letterspacing issues caused by @inlineblock-parent
+			}
+		}
+	}
+	
+	// miscellaneous fixes
+
+	// ribbon browse etc buttons
+	ul.ms-cui-tts {
+		height: 42px;
+	}
+
+	// site actions top navigation bar
+	div.ms-cui-topBar2 {
+		border-bottom: 1px solid tint(palette(backgrounds, head-main), $color-shift/2);
+	}
+
+	// site actions button, logged in username hover state, site actions option buttons
+	span.ms-siteactionsmenuhover, span.ms-welcomeMenu.ms-SpLinkButtonActive, a.ms-qatbutton:hover, span.s4-breadcrumb-anchor:hover, a.ms-cui-tt-a:hover {
+		border-color: transparent;
+		background-image: none;
+		background-color: palette(intraining-grey);
+		color: palette(text, light);
+		cursor: pointer;
+	}
+	
+	// site actions button default state
+	span.ms-siteactionsmenuinner {
+		border-color: transparent;
+		border-top-color: transparent;
+		background-image: none;
+		background-color: transparent;
+		background: none;
+	}
+
+	span.ms-siteactionsmenuinner, span.ms-siteactionsmenuhover {
+		height: 24px; // height override fix
+		padding: 2px 4px 0px 2px; // padding fix
+	}
+	
+	#s4-statusbarcontainer {
+		display: none; // hide status bar on deployment
+		
+		// sharepoint page actions status bar
+		#pageStatusBar {
+			border-style: none;
+			border-width: 0;
+			border-color: transparent;
+			font-family: 'OpenSans', $helvetica;
+			background-image: none;
+			background-color: #fdf289;
+			color: palette(text);
+			
+			@include respond-to(mobile-skinny) {
+				font-size: 0.75em; // 12px
+			}
+			
+			@include respond-to(tablet) {
+				font-size: 0.8125em; // 13px
+			}
+			
+			@include respond-to(desktop) {
+				padding-left: $padding;
+			}
+			
+			@include respond-to(superwide) {
+				font-size: 0.875em; // 14px
+			}
+		}	
+	}
+	
+	// page content display block fix
+	div.ms-rtestate-field {
+		display: block !important;
+	}
+	
+	.ms-WPBody {
+		font-size: inherit; // reset font-size from Sharepoint, breaks all controls
+	}
+	
+	.ms-WPBody a:hover {
+		text-decoration: none !important;
+	}
+	
+	.s4-wpTopTable tr td div {
+		margin-bottom: 0 !important; // widget area fix
+	}
+}

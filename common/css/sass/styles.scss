@@ -1,0 +1,22 @@
+@import "bourbon"; 								// Bourbon framework for Sass
+@import "frameworks/flex"; 						// flex mixins
+
+// Bourbon Neat includes - activate as required //
+@import "neat"; 								// Bourbon Neat, version determined by compiler (Codekit etc)
+@import "base/grid-settings"; 					// Bourbon Neat grid settings
+//@import "frameworks/neat-omegareset/mixins";  // Omega Reset override for Neat's omega function: http://joshfry.me/notes/omega-reset-for-bourbon-neat //
+
+// Required project libraries //
+@import "base/config"; 							// Default site-wide variables and mixins, must set to control theme
+@import "base/functions"; 						// Custom functions
+@import "base/easings"; 						// CSS3 easing functions
+
+// Sitepoint fixes - activate as required //
+//@import "base/sharepoint";					// Sharepoint fixes Sass fragment
+
+// - - - - - - - - - - - - 
+// All site Sass fragments
+// - - - - - - - - - - - - 
+
+@import 'modules/common'; 						// common sitewide element declarations
+@import 'modules/structure'; 					// structural code - grid, baselines etc

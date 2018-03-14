@@ -1,0 +1,204 @@
+// - - - - - - - typographic variables - - - - - - - //
+// to define h1-h6 sizes, use either http://lamb.cc/typograph or http://modularscale.com
+
+// default sizes for h1-h6 and body copy in unitless pixel values
+$type-h1: 32;
+$type-h2: 28;
+$type-h3: 24;
+$type-h4: 21.3;
+$type-h5: 18.7;
+$type-h6: 16; // same as $type-px (body size default)
+$type-px: 16; // body size in pixels
+
+// sizes for blockquotes, captions, figcaptions and small print, override as necessary
+$type-quote: $type-h4;
+$type-caption: $type-h6;
+$type-small: 13.3;
+
+// alter multiplier value only, to taste
+$lineheight-factor: 1.618;
+
+// @fontface name declarations
+$family-light: 'OpenSans Light';
+$family-reg: 'OpenSans';
+$family-bold: 'OpenSans Bold';
+$family-head: 'Montserrat';
+$family-italic: 'OpenSans Italic';
+$family-mono: 'Courier New';
+$family-icon: "icomoon";
+
+// variable used to calculate body line height in unitless pixel values (do not change!)
+$lineheight: $type-px * $lineheight-factor;
+
+// variable for body size percentage calculation (do not change!)
+$type-pct: (($type-px / 16) * 100%);
+
+// - - - - - - - color variables and functions - - - - - - - //
+
+$color-primary: #F39600;
+$color-secondary: #4B565C;
+$color-tertiary: rgb(33, 30, 28);
+
+$color-shift: 10%; // generic value for use with darken(), lighten(), tint(), shade() etc
+
+// Sass colour palette map and supporting function
+// http://erskinedesign.com/blog/frendlier-colour-names-sass-maps
+
+$palettes: (
+	'backgrounds': (
+		'base': white,
+		'nav-sub': tint($color-secondary, $color-shift*6), // #b5b7bb
+		'nav-main': #bcc6cc,
+		'content': #fffaf3,
+		'head-main': #ffe7cb,
+		//'widget': #fffaf3, //shade(#fffaf3, $color-shift/2),
+		'widget': #ecedee, //$color-secondary, 10% opacity
+		'input': tint($color-secondary, $color-shift*9),
+		'input-hover': tint($color-secondary, $color-shift*8)
+	),
+	'intraining-orange': (
+		'base': $color-primary,
+		//'light': #fbcb8e, // 50% opacity
+		'light': tint($color-primary, $color-shift*2),
+		'x-light': #fceee5 // 5% opacity
+	),
+	'intraining-grey': (
+		'base': $color-secondary,
+		'light': #a2a5aa, // 50% opacity
+		'x-light': #ecedee, // 10% opacity
+	),
+	'intraining-black': (
+		'base': $color-tertiary
+	),
+	'text': (
+		'base': #444,
+		'headings': #222,
+		'masthead': $color-secondary,
+		'light': #eee
+	),
+	'status': (
+		'base': #ccc,
+		'alert': #f7f06d,
+		'warning': #f01313,
+		//'confirm': #587c43
+		'confirm': $color-primary
+
+	),
+	'borders': (
+		'base': tint($color-secondary, $color-shift*4)
+	)
+);
+
+@function palette($palette, $tone: 'base') {
+	@return map-get(map-get($palettes, $palette), $tone);
+}
+
+// - - - - - - - background image variables - - - - - - - //
+
+$bg-primary: '../img/bg_blue.png'; //'../img/bg1.png';
+$bg-secondary: '';
+$bg-tertiary: '';
+
+// - - - - - - - spacing variables - - - - - - - //
+
+$padding: 1.5em;
+$margin: 1.5em;
+
+// - - - - - - - transition duration - - - - - - - //
+
+$duration: 0.2s;
+
+// - - - - - - - BG glyph image filepaths (Icons and Logos) - - - - - - - //
+
+$glyph-filepath : '../img/glyphs/';
+$svg-filepath : $glyph-filepath + 'svg/';
+$png-filepath : $glyph-filepath + 'png/';
+
+// - - - - - - - border generation mixin and variables - - - - - - - //
+
+@mixin border($direction, $properties: 1px solid #666) {
+  @if ($direction == 'all') 
+      or ($direction == 'no-top') 
+      or ($direction == 'no-bottom') 
+      or ($direction == 'no-left') 
+      or ($direction == 'no-right') {
+    border: $properties;
+    
+    @if $direction == 'no-top' {
+      border-top: 0;
+    }
+    @if $direction == 'no-bottom' {
+      border-bottom: 0;
+    }
+    @if $direction == 'no-left' {
+      border-left: 0;
+    }
+    @if $direction == 'no-right' {
+      border-right: 0;
+    }
+  } @else if ($direction == 'top') 
+      or ($direction == 'vertical') 
+      or ($direction == 'top-left') 
+      or ($direction == 'top-right') {
+    border-top: $properties;
+    
+    @if $direction == 'vertical' {
+      border-bottom: $properties;
+    }
+    @if $direction == 'top-left' {
+      border-left: $properties;
+    }
+    @if $direction == 'top-right' {
+      border-right: $properties;
+    }
+  } @else if ($direction == 'bottom') 
+      or ($direction == 'bottom-left') 
+      or ($direction == 'bottom-right') {
+    border-bottom: $properties;
+    
+    @if $direction == 'bottom-left' {
+      border-left: $properties;
+    }
+    @if $direction == 'bottom-right' {
+      border-right: $properties;
+    }
+  } @else if ($direction == 'left') 
+      or ($direction == 'horizontal') {
+    border-left: $properties;
+    
+    @if $direction == 'horizontal' {
+      border-right: $properties;
+    }
+  } @else if ($direction == 'right') {
+    border-right: $properties;
+  } @else if ($direction == 'none') {
+    border: 0 none transparent;
+  } @else {
+    @warn 'This property does not exist in this property map.';
+  }
+}
+
+$border-style-default: 1px solid palette(borders);
+
+// - - - - - - - common mixins and placeholder selectors - - - - - - - //
+
+@mixin opensans-light {
+	font-family: 'OpenSans Light', $helvetica;
+	font-weight: normal;
+}
+
+@mixin opensans-normal {
+	font-family: 'OpenSans', $helvetica;
+	font-weight: normal;
+}
+
+@mixin opensans-bold {
+	font-family: 'OpenSans Bold', $helvetica;
+	font-weight: normal;
+}
+
+@mixin opensans-italic {
+	font-family: 'OpenSans Italic', $helvetica;
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,427 @@
+// - - - - - - - - - - - - - TYPOGRAPHIC DECLARATIONS - - - - - - - - - - - - - //
+
+// --------------- defaults ----------------
+
+*, *:before, *:after {
+	@include box-sizing;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	//-webkit-user-select: none; // to disable user selection, breaks some interactive elements
+	-webkit-touch-callout: none;
+	-webkit-backface-visibility: hidden; // for 3D transforms
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+}
+
+body {
+	background-color: #242424;
+
+	@include respond-to(mobile-skinny) {
+		-webkit-overflow-scrolling: touch;
+	}
+
+	@include respond-to(superwide) {
+		-webkit-overflow-scrolling: auto;
+	}
+}
+
+html>body {
+	 
+}
+
+// --------------- headers and paragraphs ----------------
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+
+}
+
+// --------------- in-line emphasis ----------------
+
+b, strong {
+
+}
+
+i, em {
+
+}
+
+u {
+
+}
+
+s {
+
+}
+
+// --------------- quotes, cites and definitions ----------------
+
+blockquote {
+
+	&:before, &:after {
+
+	}
+}
+
+q {
+
+}
+
+cite {
+
+}
+
+dfn {
+
+}
+
+abbr {
+
+}
+
+// --------------- code and preformatted ----------------
+
+pre, code, samp, kbd {
+
+}
+
+var {
+
+}
+
+// --------------- smalltext ----------------
+
+small {
+
+}
+
+sub {
+
+}
+
+sup {
+
+}
+
+// --------------- bidirectional ----------------
+
+bdo {
+
+}
+
+// --------------- insertions and deletions ----------------
+
+ins {
+
+}
+
+del {
+
+}
+
+// --------------- informational ----------------
+
+address {
+
+}
+
+// - - - - - - - - - - - - - HTML5 TYPOGRAPHIC DECLARATIONS - - - - - - - - - - - - - //
+
+mark {
+
+}
+
+ruby {
+
+	rp {
+
+	}
+
+	rt {
+
+	}
+}
+
+// - - - - - - - - - - - - - STANDARD HYPERLINK DECLARATIONS - - - - - - - - - - - - - //
+
+a, a:link, a:visited {
+
+}
+
+a:active {
+
+}
+
+a:hover, a:focus {
+
+}
+
+// - - - - - - - - - - - - - LIST DECLARATIONS - - - - - - - - - - - - - //
+
+ul {
+
+}
+
+ul li {
+
+}
+
+ol {
+
+}
+
+ol li {
+
+}
+
+dl {
+
+}
+
+dt {
+
+}
+
+dd {
+
+}
+
+// - - - - - - - - - - - - - FORM ELEMENT DECLARATIONS - - - - - - - - - - - - - //
+
+fieldset {
+
+}
+
+legend {
+
+}
+
+label {
+
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], button[type="button"], button[type="submit"], button[type="reset"], button, a.button {
+
+	&:hover {
+
+	}
+
+	&:active {
+
+	}
+}
+
+input[type="text"], input[type="password"], input[type="file"] {
+
+	&:hover {
+
+	}
+
+	&:focus {
+
+	}
+}
+
+textarea {
+
+	&:hover {
+
+	}
+
+	&:focus {
+
+	}
+}
+
+input[type="radio"], input[type="checkbox"] {
+
+	&:hover {
+
+	}
+
+	&:checked {
+
+	}
+}
+
+select {
+
+	&:hover {
+
+	}
+
+	&:focus {
+
+	}
+
+}
+
+select option {
+
+	&:hover {
+
+	}
+}
+
+input[disabled] {
+
+}
+
+input[readonly] {
+
+}
+
+
+// - - - - - - - - - - - - - TABLE STRUCTURE DECLARATIONS - - - - - - - - - - - - - //
+
+table {
+
+}
+
+thead tr, tfoot tr {
+
+}
+
+thead th, tfoot th {
+
+}
+
+tbody tr {
+
+}
+
+tbody th {
+
+}
+
+tbody td {
+
+}
+
+caption {
+
+}
+
+// - - - - - - - - - - - - - HTML5 NON-STRUCTURAL ELEMENT DECLARATIONS - - - - - - - - - - - - - //
+
+// --------------- secondary information ----------------
+
+figure {
+
+}
+
+figcaption {
+
+}
+
+// --------------- form elements ----------------
+
+progress {
+
+}
+
+meter {
+
+}
+
+datalist {
+
+ 	&:hover {
+
+ 	}
+
+	&:focus {
+
+	}
+}
+
+datalist option {
+
+	&:hover {
+
+	}
+}
+
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"] {
+
+	&:hover {
+
+	}
+
+	&:focus {
+
+	}
+}
+
+// - - - - - - - - - - - - - HTML5 STRUCTURAL ELEMENT DECLARATIONS - - - - - - - - - - - - - //
+
+header {
+
+}
+
+nav {
+
+}
+
+section {
+
+}
+
+article {
+
+}
+
+aside {
+
+}
+
+footer {
+
+}
+
+audio {
+
+}
+
+video {
+
+}
+
+canvas {
+
+}
+
+// - - - - - - - - - - - - - FONTFACE DECLARATIONS (always loaded last) - - - - - - - - - - - - - //
+
+//@include font-face($family-reg, 'font/opensans-r');
+//@include font-face($family-italic, 'font/opensans-i');
+//@include font-face($family-bold, 'font/opensans-b');
+//@include font-face($family-icon, 'font/icomoon');

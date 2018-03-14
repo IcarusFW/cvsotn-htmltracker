@@ -1,0 +1,81 @@
+@function recalculate-width($target, $border) {
+	$maxwidth-px: strip-unit($max-width) * $type-px; // max-width in unitless
+	$factor: strip-unit($target) / 100; // factor in decimal percentage 0.xx
+	$actual: $maxwidth-px * $factor - ($border * 2); // width of element in pct
+	$inpercent: strip-unit($actual / $maxwidth-px) * 100%; // convert to percentage
+	@return $inpercent;
+}
+
+@mixin span-columns-ie7($span: $columns of $container-columns, $border: 0px, $display: block) {
+  $columns: nth($span, 1);
+  $container-columns: container-span($span);
+
+  // Set nesting context (used by shift())
+  $parent-columns: get-parent-columns($container-columns);
+
+  $direction: get-direction($layout-direction, $default-layout-direction);
+  $opposite-direction: get-opposite-direction($direction);
+
+  $display-table: is-display-table($container-display-table, $display);
+
+  @if $display-table  {
+    $padding: get-padding-for-table-layout($columns, $container-columns);
+    display: table-cell;
+    padding-#{$direction}: $padding;
+    $width: flex-grid($columns, $container-columns) + $padding;
+    width: $width;
+    *width: recalculate-width($width, $border);
+  } @else {
+    display: block;
+    float: #{$opposite-direction};
+
+    @if $display == collapse {
+      $width: flex-grid($columns, $container-columns) + flex-gutter($container-columns);
+      width: $width;
+      *width: recalculate-width($width, $border);
+    } @else {
+      margin-#{$direction}: flex-gutter($container-columns);
+      $width: flex-grid($columns, $container-columns);
+      width: $width;
+      *width: recalculate-width($width, $border);
+    }
+
+    &:last-child {
+      margin-#{$direction}: 0;
+    }
+  }
+}
+
+@mixin span-columns($span: $columns of $container-columns, $display: block) {
+  $columns: nth($span, 1);
+  $container-columns: container-span($span);
+
+  // Set nesting context (used by shift())
+  $parent-columns: get-parent-columns($container-columns);
+
+  $direction: get-direction($layout-direction, $default-layout-direction);
+  $opposite-direction: get-opposite-direction($direction);
+
+  $display-table: is-display-table($container-display-table, $display);
+
+  @if $display-table  {
+    $padding: get-padding-for-table-layout($columns, $container-columns);
+    display: table-cell;
+    padding-#{$direction}: $padding;
+    width: flex-grid($columns, $container-columns) + $padding;
+  } @else {
+    display: block;
+    float: #{$opposite-direction};
+
+    @if $display == collapse {
+      width: flex-grid($columns, $container-columns) + flex-gutter($container-columns);
+    } @else {
+      margin-#{$direction}: flex-gutter($container-columns);
+      width: flex-grid($columns, $container-columns);
+    }
+
+    &:last-child {
+      margin-#{$direction}: 0;
+    }
+  }
+}

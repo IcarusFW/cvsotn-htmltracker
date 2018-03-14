@@ -1,0 +1,6 @@
+// ---------- styles loaded for Internet Explorer 8 only ---------- //
+
+$old-ie: true;				// sets all @includes for just IE to ON
+$fix-mqs: 60em;				// maximum media query viewport to accept - anything higher is ignored
+
+@import 'styles';
