@@ -719,321 +719,310 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/icons\/Card_Bat_Icon.png": {
+	"\/icons\/cardBat.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1221,
-		"inputAbbreviatedPath": "\/icons\/Card_Bat_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Card_Bat_Icon.png",
+		"initialSize": 1032,
+		"inputAbbreviatedPath": "\/icons\/cardBat.png",
+		"outputAbbreviatedPath": "\/icons\/cardBat.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Card_Demon_Icon.png": {
+	"\/icons\/cardDemon.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1352,
-		"inputAbbreviatedPath": "\/icons\/Card_Demon_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Card_Demon_Icon.png",
+		"initialSize": 1296,
+		"inputAbbreviatedPath": "\/icons\/cardDemon.png",
+		"outputAbbreviatedPath": "\/icons\/cardDemon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Card_Faerie_Icon.png": {
+	"\/icons\/cardFaerie.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1340,
-		"inputAbbreviatedPath": "\/icons\/Card_Faerie_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Card_Faerie_Icon.png",
+		"initialSize": 1096,
+		"inputAbbreviatedPath": "\/icons\/cardFaerie.png",
+		"outputAbbreviatedPath": "\/icons\/cardFaerie.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Card_Ghost_Icon.png": {
+	"\/icons\/cardGhost.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1446,
-		"inputAbbreviatedPath": "\/icons\/Card_Ghost_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Card_Ghost_Icon.png",
+		"initialSize": 1326,
+		"inputAbbreviatedPath": "\/icons\/cardGhost.png",
+		"outputAbbreviatedPath": "\/icons\/cardGhost.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Card_Icon.png": {
+	"\/icons\/cardSword.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3217,
-		"inputAbbreviatedPath": "\/icons\/Card_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Card_Icon.png",
+		"initialSize": 1093,
+		"inputAbbreviatedPath": "\/icons\/cardSword.png",
+		"outputAbbreviatedPath": "\/icons\/cardSword.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Card_Sword_Icon.png": {
+	"\/icons\/cubeOfZoe.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1223,
-		"inputAbbreviatedPath": "\/icons\/Card_Sword_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Card_Sword_Icon.png",
+		"initialSize": 4682,
+		"inputAbbreviatedPath": "\/icons\/cubeOfZoe.png",
+		"outputAbbreviatedPath": "\/icons\/cubeOfZoe.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Cube_of_Zoe_Icon.png": {
+	"\/icons\/echoOfBat.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3503,
-		"inputAbbreviatedPath": "\/icons\/Cube_of_Zoe_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Cube_of_Zoe_Icon.png",
+		"initialSize": 5681,
+		"inputAbbreviatedPath": "\/icons\/echoOfBat.png",
+		"outputAbbreviatedPath": "\/icons\/echoOfBat.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Echo_of_Bat_Icon.png": {
+	"\/icons\/eyeOfVlad.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4021,
-		"inputAbbreviatedPath": "\/icons\/Echo_of_Bat_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Echo_of_Bat_Icon.png",
+		"initialSize": 3676,
+		"inputAbbreviatedPath": "\/icons\/eyeOfVlad.png",
+		"outputAbbreviatedPath": "\/icons\/eyeOfVlad.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Eye_of_Vlad_Icon.png": {
+	"\/icons\/faerieScroll.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2588,
-		"inputAbbreviatedPath": "\/icons\/Eye_of_Vlad_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Eye_of_Vlad_Icon.png",
+		"initialSize": 3437,
+		"inputAbbreviatedPath": "\/icons\/faerieScroll.png",
+		"outputAbbreviatedPath": "\/icons\/faerieScroll.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Fairie_Scroll_Icon.png": {
+	"\/icons\/fireOfBat.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3314,
-		"inputAbbreviatedPath": "\/icons\/Fairie_Scroll_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Fairie_Scroll_Icon.png",
+		"initialSize": 5803,
+		"inputAbbreviatedPath": "\/icons\/fireOfBat.png",
+		"outputAbbreviatedPath": "\/icons\/fireOfBat.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Fire_of_Bat_Icon.png": {
+	"\/icons\/forceOfEcho.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3999,
-		"inputAbbreviatedPath": "\/icons\/Fire_of_Bat_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Fire_of_Bat_Icon.png",
+		"initialSize": 5117,
+		"inputAbbreviatedPath": "\/icons\/forceOfEcho.png",
+		"outputAbbreviatedPath": "\/icons\/forceOfEcho.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Force_of_Echo_Icon.png": {
+	"\/icons\/formOfMist.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4028,
-		"inputAbbreviatedPath": "\/icons\/Force_of_Echo_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Force_of_Echo_Icon.png",
+		"initialSize": 6121,
+		"inputAbbreviatedPath": "\/icons\/formOfMist.png",
+		"outputAbbreviatedPath": "\/icons\/formOfMist.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Form_of_Mist_Icon.png": {
+	"\/icons\/gasCloud.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4140,
-		"inputAbbreviatedPath": "\/icons\/Form_of_Mist_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Form_of_Mist_Icon.png",
+		"initialSize": 6250,
+		"inputAbbreviatedPath": "\/icons\/gasCloud.png",
+		"outputAbbreviatedPath": "\/icons\/gasCloud.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Gas_Cloud_Icon.png": {
+	"\/icons\/gravityBoots.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4355,
-		"inputAbbreviatedPath": "\/icons\/Gas_Cloud_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Gas_Cloud_Icon.png",
+		"initialSize": 5099,
+		"inputAbbreviatedPath": "\/icons\/gravityBoots.png",
+		"outputAbbreviatedPath": "\/icons\/gravityBoots.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Gravity_Boots_Icon.png": {
+	"\/icons\/heartOfVlad.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3466,
-		"inputAbbreviatedPath": "\/icons\/Gravity_Boots_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Gravity_Boots_Icon.png",
+		"initialSize": 5164,
+		"inputAbbreviatedPath": "\/icons\/heartOfVlad.png",
+		"outputAbbreviatedPath": "\/icons\/heartOfVlad.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Heart_of_Vlad_Icon.png": {
+	"\/icons\/holySymbol.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3639,
-		"inputAbbreviatedPath": "\/icons\/Heart_of_Vlad_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Heart_of_Vlad_Icon.png",
+		"initialSize": 2373,
+		"inputAbbreviatedPath": "\/icons\/holySymbol.png",
+		"outputAbbreviatedPath": "\/icons\/holySymbol.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Holy_Symbol_Icon.png": {
+	"\/icons\/jewelOfOpen.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2509,
-		"inputAbbreviatedPath": "\/icons\/Holy_Symbol_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Holy_Symbol_Icon.png",
+		"initialSize": 5340,
+		"inputAbbreviatedPath": "\/icons\/jewelOfOpen.png",
+		"outputAbbreviatedPath": "\/icons\/jewelOfOpen.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Jewel_of_Open_Icon.png": {
+	"\/icons\/leapStone.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3392,
-		"inputAbbreviatedPath": "\/icons\/Jewel_of_Open_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Jewel_of_Open_Icon.png",
+		"initialSize": 5011,
+		"inputAbbreviatedPath": "\/icons\/leapStone.png",
+		"outputAbbreviatedPath": "\/icons\/leapStone.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Leap_Stone_Icon.png": {
+	"\/icons\/mermanStatue.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3021,
-		"inputAbbreviatedPath": "\/icons\/Leap_Stone_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Leap_Stone_Icon.png",
+		"initialSize": 5679,
+		"inputAbbreviatedPath": "\/icons\/mermanStatue.png",
+		"outputAbbreviatedPath": "\/icons\/mermanStatue.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Merman_Statue_Icon.png": {
+	"\/icons\/powerOfMist.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3544,
-		"inputAbbreviatedPath": "\/icons\/Merman_Statue_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Merman_Statue_Icon.png",
+		"initialSize": 6429,
+		"inputAbbreviatedPath": "\/icons\/powerOfMist.png",
+		"outputAbbreviatedPath": "\/icons\/powerOfMist.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Power_of_Mist_Icon.png": {
+	"\/icons\/powerOfWolf.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4383,
-		"inputAbbreviatedPath": "\/icons\/Power_of_Mist_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Power_of_Mist_Icon.png",
+		"initialSize": 5661,
+		"inputAbbreviatedPath": "\/icons\/powerOfWolf.png",
+		"outputAbbreviatedPath": "\/icons\/powerOfWolf.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Power_of_Wolf_Icon.png": {
+	"\/icons\/ribOfVlad.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3836,
-		"inputAbbreviatedPath": "\/icons\/Power_of_Wolf_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Power_of_Wolf_Icon.png",
+		"initialSize": 4660,
+		"inputAbbreviatedPath": "\/icons\/ribOfVlad.png",
+		"outputAbbreviatedPath": "\/icons\/ribOfVlad.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Rib_of_Vlad_Icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2945,
-		"inputAbbreviatedPath": "\/icons\/Rib_of_Vlad_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Rib_of_Vlad_Icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/icons\/Ring_of_Vlad_Icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2943,
-		"inputAbbreviatedPath": "\/icons\/Ring_of_Vlad_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Ring_of_Vlad_Icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/icons\/Skill_of_Wolf_Icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3745,
-		"inputAbbreviatedPath": "\/icons\/Skill_of_Wolf_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Skill_of_Wolf_Icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/icons\/Soul_of_Bat_Icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3920,
-		"inputAbbreviatedPath": "\/icons\/Soul_of_Bat_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Soul_of_Bat_Icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/icons\/Soul_of_Wolf_Icon.png": {
+	"\/icons\/ringOfVlad.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3854,
-		"inputAbbreviatedPath": "\/icons\/Soul_of_Wolf_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Soul_of_Wolf_Icon.png",
+		"inputAbbreviatedPath": "\/icons\/ringOfVlad.png",
+		"outputAbbreviatedPath": "\/icons\/ringOfVlad.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Spirit_Orb_Icon.png": {
+	"\/icons\/skillOfWolf.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3356,
-		"inputAbbreviatedPath": "\/icons\/Spirit_Orb_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Spirit_Orb_Icon.png",
+		"initialSize": 5416,
+		"inputAbbreviatedPath": "\/icons\/skillOfWolf.png",
+		"outputAbbreviatedPath": "\/icons\/skillOfWolf.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/icons\/Tooth_of_Vlad_Icon.png": {
+	"\/icons\/soulOfBat.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2206,
-		"inputAbbreviatedPath": "\/icons\/Tooth_of_Vlad_Icon.png",
-		"outputAbbreviatedPath": "\/icons\/Tooth_of_Vlad_Icon.png",
+		"initialSize": 5536,
+		"inputAbbreviatedPath": "\/icons\/soulOfBat.png",
+		"outputAbbreviatedPath": "\/icons\/soulOfBat.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/icons\/soulOfWolf.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5472,
+		"inputAbbreviatedPath": "\/icons\/soulOfWolf.png",
+		"outputAbbreviatedPath": "\/icons\/soulOfWolf.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/icons\/spiritOrb.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3525,
+		"inputAbbreviatedPath": "\/icons\/spiritOrb.png",
+		"outputAbbreviatedPath": "\/icons\/spiritOrb.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/icons\/toothOfVlad.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2837,
+		"inputAbbreviatedPath": "\/icons\/toothOfVlad.png",
+		"outputAbbreviatedPath": "\/icons\/toothOfVlad.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1046,6 +1035,27 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		}
 	},
 "hooks": [
